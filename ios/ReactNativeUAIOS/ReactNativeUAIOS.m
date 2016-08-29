@@ -26,13 +26,14 @@ static PushHandler *pushHandler = nil;
 
 + (void)setupUrbanAirship:(NSDictionary *) launchOptions {
     UAConfig *config = [UAConfig defaultConfig];
-
+    config.automaticSetupEnabled = NO;
+    
     [UAirship takeOff:config];
-
+    
     pushHandler = [PushHandler new];
     [UAirship push].pushNotificationDelegate = pushHandler;
-
-        UAAction *urlAction = [UAAction actionWithBlock:^(UAActionArguments *args, UAActionCompletionHandler completionHandler) {
+    
+    UAAction *urlAction = [UAAction actionWithBlock:^(UAActionArguments *args, UAActionCompletionHandler completionHandler) {
         completionHandler([UAActionResult emptyResult]);
     } acceptingArguments:^BOOL(UAActionArguments *args) {
         return YES;
@@ -63,20 +64,11 @@ static PushHandler *pushHandler = nil;
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(enableNotification) {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-
     [UAirship push].userPushNotificationsEnabled = YES;
+}
 
-    if ([defaults objectForKey:@"first_time_notification_enable"]) {
-
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
-
-    } else {
-
-        [defaults setBool:YES forKey:@"first_time_notification_enable"];
-        [defaults synchronize];
-
-    }
+RCT_EXPORT_METHOD(ios_openSettings) {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
 RCT_EXPORT_METHOD(disableNotification) {
