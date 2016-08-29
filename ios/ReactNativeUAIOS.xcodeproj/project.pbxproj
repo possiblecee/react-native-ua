@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABABA331D747381000407C6 /* libUAirship-7.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABABA321D747381000407C6 /* libUAirship-7.2.0.a */; };
 		51AC194D1CE4ACED00EF7E09 /* ReactNativeUAIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51AC194C1CE4ACED00EF7E09 /* ReactNativeUAIOS.h */; };
 		51AC194F1CE4ACED00EF7E09 /* ReactNativeUAIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AC194E1CE4ACED00EF7E09 /* ReactNativeUAIOS.m */; };
-		51AC1BB41CE4AE8300EF7E09 /* libUAirship-7.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AC1AE01CE4AE8300EF7E09 /* libUAirship-7.1.1.a */; };
 		51AC1D111CE4CC9000EF7E09 /* AirshipResources.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51AC1A891CE4AE8300EF7E09 /* AirshipResources.bundle */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1ABABA321D747381000407C6 /* libUAirship-7.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUAirship-7.2.0.a"; path = "../../../../../../Downloads/libUAirship-7.2.0/Airship/libUAirship-7.2.0.a"; sourceTree = "<group>"; };
 		51AC19491CE4ACED00EF7E09 /* libReactNativeUAIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeUAIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AC194C1CE4ACED00EF7E09 /* ReactNativeUAIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactNativeUAIOS.h; sourceTree = "<group>"; };
 		51AC194E1CE4ACED00EF7E09 /* ReactNativeUAIOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeUAIOS.m; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 		51AC1ADD1CE4AE8300EF7E09 /* UAInboxMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxMessage.h; sourceTree = "<group>"; };
 		51AC1ADE1CE4AE8300EF7E09 /* UAInboxMessageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxMessageList.h; sourceTree = "<group>"; };
 		51AC1ADF1CE4AE8300EF7E09 /* UAInboxUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAInboxUtils.h; sourceTree = "<group>"; };
-		51AC1AE01CE4AE8300EF7E09 /* libUAirship-7.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libUAirship-7.1.1.a"; sourceTree = "<group>"; };
 		51AC1AE21CE4AE8300EF7E09 /* UAChannelRegistrar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAChannelRegistrar.h; sourceTree = "<group>"; };
 		51AC1AE31CE4AE8300EF7E09 /* UAMutableUserNotificationAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAMutableUserNotificationAction.h; sourceTree = "<group>"; };
 		51AC1AE41CE4AE8300EF7E09 /* UAMutableUserNotificationCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAMutableUserNotificationCategory.h; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51AC1BB41CE4AE8300EF7E09 /* libUAirship-7.1.1.a in Frameworks */,
+				1ABABA331D747381000407C6 /* libUAirship-7.2.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +284,8 @@
 				51AC1A891CE4AE8300EF7E09 /* AirshipResources.bundle */,
 				51AC1A8A1CE4AE8300EF7E09 /* Common */,
 				51AC1AD91CE4AE8300EF7E09 /* External */,
+				1ABABA321D747381000407C6 /* libUAirship-7.2.0.a */,
 				51AC1ADB1CE4AE8300EF7E09 /* Inbox */,
-				51AC1AE01CE4AE8300EF7E09 /* libUAirship-7.1.1.a */,
 				51AC1AE11CE4AE8300EF7E09 /* Push */,
 			);
 			name = Airship;
