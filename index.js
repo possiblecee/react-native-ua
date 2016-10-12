@@ -32,13 +32,15 @@ switch (Platform.OS) {
         NativeAppEventEmitter.addListener('receivedNotification', (notification) => {
             var action_url = notification.data['^u'] || false;
 
-            call_notification_listeners({
-                'platform': 'ios',
-                'event': notification.event,
-                'alert': notification.data.aps.alert,
-                'data': notification.data,
-                'url': action_url
-            });
+            if (notification && notification.data && notification.data.aps && notification.data.aps.alert) {
+              call_notification_listeners({
+                  'platform': 'ios',
+                  'event': notification.event,
+                  'alert': notification.data.aps.alert,
+                  'data': notification.data,
+                  'url': action_url
+              });
+            }
         });
 
         break;
@@ -104,6 +106,18 @@ class ReactNativeUA {
 
     static on_notification (callback) {
         notification_listeners.push(callback);
+    }
+
+    static set_android_small_icon(iconName) {
+        if (Platform.OS === 'android') {
+            bridge.setAndroidSmallIcon(iconName);
+        }
+    }
+
+    static set_android_large_icon (iconName) {
+        if (Platform.OS === 'android') {
+            bridge.setAndroidLargeIcon(iconName);
+        }
     }
 
 }
