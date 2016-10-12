@@ -20,7 +20,7 @@ static PushHandler *pushHandler = nil;
 
 + (void)setupUrbanAirship:(NSDictionary *) launchOptions {
     UAConfig *config = [UAConfig defaultConfig];
-
+    config.automaticSetupEnabled = NO;
     [UAirship takeOff:config];
 
     pushHandler = [[PushHandler alloc] init];
