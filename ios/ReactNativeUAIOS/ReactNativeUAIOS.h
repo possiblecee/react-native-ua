@@ -3,6 +3,8 @@
 #import "UAirship.h"
 #import "UAPush.h"
 
+#import "AirshipLib.h"
+
 @interface ReactNativeUAIOS : NSObject <RCTBridgeModule>
 + (void)setupUrbanAirship:(NSDictionary *) launchOptions;
 @end

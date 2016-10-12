@@ -1,7 +1,6 @@
 #import "RCTBridge.h"
 #import "RCTEventDispatcher.h"
 #import "ReactNativeUAIOS.h"
-#import "AirshipLib.h"
 
 @implementation ReactNativeUAIOS
 
