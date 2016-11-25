@@ -1,6 +1,6 @@
 {
   "name": "react-native-ua",
-  "version": "0.0.5",
+  "version": "0.1.3",
   "description": "React Native module for Urban Airship platforms: iOS and Android (POSSIBLE CEE fork)",
   "main": "index.js",
   "homepage": "https://github.com/possiblecee/react-native-ua#readme",
@@ -17,6 +17,10 @@
     {
       "name": "Thiago Papageorgiou",
       "email": "tpapageorgiou@gmail.com"
+    },
+    {
+      "name": "Arthur Zettler",
+      "email": "arthur.zettler@gmail.com"
     },
     {
       "name": "Zsolt Dudas",
