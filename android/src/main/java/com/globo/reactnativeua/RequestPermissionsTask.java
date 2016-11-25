@@ -39,3 +39,4 @@ class RequestPermissionsTask extends AsyncTask<String, Void, Boolean> {
         }
     }
 }
+
