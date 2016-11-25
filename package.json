@@ -1,6 +1,6 @@
 {
   "name": "react-native-ua",
-  "version": "0.0.9-alpha.1-possible",
+  "version": "0.1.2",
   "description": "React Native module for Urban Airship platforms: iOS and Android (POSSIBLE CEE fork)",
   "main": "index.js",
   "homepage": "https://github.com/possiblecee/react-native-ua#readme",
