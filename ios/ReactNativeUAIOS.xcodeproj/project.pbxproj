@@ -10,7 +10,6 @@
 		51AC194D1CE4ACED00EF7E09 /* ReactNativeUAIOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51AC194C1CE4ACED00EF7E09 /* ReactNativeUAIOS.h */; };
 		51AC194F1CE4ACED00EF7E09 /* ReactNativeUAIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AC194E1CE4ACED00EF7E09 /* ReactNativeUAIOS.m */; };
 		938B32AA1D9C4DE70078C3D6 /* AirshipResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 938B32431D9C4DE70078C3D6 /* AirshipResources.bundle */; };
-		938B32AB1D9C4DE70078C3D6 /* libUAirship-8.0.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938B32A01D9C4DE70078C3D6 /* libUAirship-8.0.1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -240,7 +239,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938B32AB1D9C4DE70078C3D6 /* libUAirship-8.0.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
