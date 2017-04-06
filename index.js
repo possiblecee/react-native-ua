@@ -128,6 +128,15 @@ class ReactNativeUA {
             })
         })
     }
+
+    static get_in_production(callback) {
+        return new Promise((resolve, reject) => {
+            bridge.getInProduction(channelId => {
+                callback && callback(null, channelId);
+                resolve(channelId);
+            })
+        })
+    }
 }
 
 export default ReactNativeUA

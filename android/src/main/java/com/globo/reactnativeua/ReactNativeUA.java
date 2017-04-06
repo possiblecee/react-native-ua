@@ -141,12 +141,6 @@ public class ReactNativeUA extends ReactContextBaseJavaModule {
             UAirship.shared().getPushManager().setNotificationFactory(defaultNotifFactory);
         }
     }
-    
-    @ReactMethod
-    public void getChannelId(Callback callback) {
-        String channelId = UAirship.shared().getPushManager().getChannelId();
-        callback.invoke(channelId);
-    }
 
     private DefaultNotificationFactory getDefaultNotificationFactory() {
         final NotificationFactory notifFactory = UAirship.shared().getPushManager()
